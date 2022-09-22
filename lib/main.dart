@@ -2,9 +2,19 @@ import 'package:flutter/material.dart';
 
 void main() {
   runApp(
-    const MaterialApp(
-      home: Center(
-        child: Text("Hello World"),
+    MaterialApp(
+      home: Scaffold(
+        backgroundColor: Colors.pink,
+        appBar: AppBar(
+          title: const Text("Pookie Wookie Meow Meow"),
+          backgroundColor: Colors.pinkAccent,
+        ),
+        body: const Center(
+          child: Image(
+            image: AssetImage('images/imageTwo.jpg')
+            //image: NetworkImage(url)
+          ),
+        ),
       ),
     ),
   );
